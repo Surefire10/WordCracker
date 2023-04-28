@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="295.0" prefWidth="395.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.QuickStartController">
+   <children>
+      <Text fx:id="text1" layoutX="62.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To Get Started Please Enter Your Name" wrappingWidth="310.0" />
+      <Text fx:id="text2" layoutX="62.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is Just So We Know What to Call You :)" wrappingWidth="310.0" />
+      <TextField fx:id="nameField" layoutX="120.0" layoutY="175.0" onAction="#switchByEnter" onKeyTyped="#greeting" promptText = "Name"/>
+      <Button fx:id="continueButton" layoutX="162.0" layoutY="221.0" mnemonicParsing="false" onAction="#continueButton" text="Continue" />
+      <Label fx:id="greetingLabel" layoutX="111.0" layoutY="138.0" prefHeight="17.0" prefWidth="175.0" />
+   </children>
+</AnchorPane>

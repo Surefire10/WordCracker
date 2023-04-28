@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="700.0" stylesheets="@../static/application.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.controller.MainPageController">
+   <children>
+      <ChoiceBox fx:id="translationFrom" layoutX="251.0" layoutY="268.0" prefHeight="25.0" prefWidth="100.0" value="English" />
+      <Button fx:id="switchLanguages" layoutX="333.0" layoutY="90.0" mnemonicParsing="false" onAction="#switchLanguages" prefHeight="26.0" prefWidth="115.0" text="Swap Languages">
+         <tooltip>
+            <Tooltip text="Switch Languages" />
+         </tooltip></Button>
+      <TextArea fx:id="translation" editable="false" layoutX="53.0" layoutY="117.0" opacity="0.5" prefHeight="110.0" prefWidth="395.0" promptText="Translation shows up here " stylesheets="@../static/application.css" wrapText="true" />
+      <ChoiceBox fx:id="translationTo" layoutX="53.0" layoutY="90.0" prefHeight="25.0" prefWidth="100.0" value="Arabic" />
+      <TextArea fx:id="origin" layoutX="251.0" layoutY="294.0" onKeyReleased="#onTranslationRequested" opacity="0.5" prefHeight="110.0" prefWidth="395.0" promptText="Enter your text here" />
+      <Button fx:id="copyButton" layoutX="530.0" layoutY="268.0" minHeight="-Infinity" minWidth="26.0" mnemonicParsing="false" onAction="#copy" prefHeight="26.0" prefWidth="115.0" text="Copy Translation">
+         <tooltip>
+            <Tooltip text="Copy Translated Text." />
+         </tooltip>
+      </Button>
+
+   </children>
+</AnchorPane>
